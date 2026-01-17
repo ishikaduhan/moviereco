@@ -1,2 +1,2 @@
 # moviereco
-here user can choose what type of movie a person want to watch
+A responsive Movie Recommendation System built with Vanilla JavaScript, featuring real-time search and genre-based filtering."
