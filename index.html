@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-film"></i> Movie Recommendation System</h1>
+            <p>Discover your next favorite movie based on what you love!</p>
+        </header>
+
+        <main class="main-content">
+            <section class="movie-selection">
+                <h2>Choose a Movie You Like</h2>
+                <div class="search-container">
+                    <input type="text" id="movieSearch" placeholder="Search for a movie..." autocomplete="off">
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+                <div class="movie-grid" id="movieGrid">
+                    <!-- Movies will be populated here -->
+                </div>
+            </section>
+
+            <section class="selected-movie" id="selectedMovie" style="display: none;">
+                <h2>Your Selected Movie</h2>
+                <div class="selected-card">
+                    <div class="selected-info">
+                        <h3 id="selectedTitle"></h3>
+                        <p id="selectedCategories"></p>
+                        <p id="selectedDescription"></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recommendations" id="recommendations" style="display: none;">
+                <h2>Recommended Movies</h2>
+                <div class="recommendation-grid" id="recommendationGrid">
+                    <!-- Recommendations will be populated here -->
+                </div>
+            </section>
+
+            <section class="how-it-works">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <i class="fas fa-search"></i>
+                        <h3>1. Select a Movie</h3>
+                        <p>Choose a movie you enjoy from our collection</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-brain"></i>
+                        <h3>2. Analyze Similarity</h3>
+                        <p>Our algorithm finds movies with similar categories and descriptions</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-list"></i>
+                        <h3>3. Get Recommendations</h3>
+                        <p>Discover new movies based on your preferences</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Movie Recommendation System. Powered by similarity-based algorithms.</p>
+        </footer>
+    </div>
+
+    <script src="js/movies.js"></script>
+    <script src="js/recommendations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
